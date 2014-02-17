@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Git some...."
+date: 2011-09-12
+comments: false
+---
+
+<div class='post'>
+I'm moving all my projects to Git Hub, and maybe some old ones too.  My main problem is that I'm vexed by a good memory of when I was young and had a good memory.  The result is that I rarely document anything and just think "I'll remember that"  Now that I'm not in my 20's anymore I've noticed this ability has faded a bit but I'm left with pages of old undocumented code.  I may be too embarrassed to put all my tragically undocumented code up on github, but I'm moving my current project on there.  You can check out my <a href="https://github.com/emhart/">github here</a>.</div>

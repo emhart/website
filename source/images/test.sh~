@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for file in 'dir -d'; do
+echo $file
+done

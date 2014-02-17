@@ -1,0 +1,16 @@
+---
+layout: post
+title: "An open letter to the powers that be at ESA"
+date: 2012-08-20 23:37
+comments: true
+categories: 
+---
+
+Ok, I'm calling you out ESA to the meager number of people who read my blog.  I'm reading my RSS feeds for journal abstracts on my iPad tonight in my favorite aggrigator reading app, [pulse](http://www.pulse.me/).  I think to myself: "Well I know that Ecology doesn't have abstracts, but Ecosphere must. Why it's ESA's new flagship open access, online only journal!"  Of course what was I thinking?  I forgot that ESA's online presence is essentially run by people who are frozen in time.  I imagine it's two guys wearing track suits talking about how much they hate that new song "Hit me baby one more time" and marveling at these cool new things called "cascading style sheets".  Ok, I'm being snarky for the sole reason of being able to bring up Britney Spears in a blog post.  Truly I have no idea why the ESA website hasn't changed much from when I looked at when I was still an undergrad a decade ago, but I don't think it's due to any lack of technical expertise.  But here's a quick list of technical gripes.
+
+* Seriously, no abstracts in your RSS feed?  I pay less attention to your journal because of that.
+* No share or tweet button?  I mean even Wiley has that and they're the evil empire.  They have a twitter button, and a mendeley button, and a del.ic.ous button, etc...
+* Your personal scheduler for your meeting is the same one I used in 2007.  No mobile version?  I used my phone as scheduling device all meeting and it was a pain to scroll around an full page.
+* No preprints? Still?
+
+Look, I don't expect you to be PloS, that's too much to ask. Wiley, Elsevier, etc...That's evil empire type shit, Darth Vader, Big Brother from 1984, but you're _my society_. I want you to be modern, sleek, the place I go and see "Damn that's some cutting edge funk!"  Instead I see the same tired web site, the same difficult to navigate, difficult to share articles.  I'm 33, there's a whole crop of younger grad students than me, and if you're losing me, you're losing them.  So what's the deal?  I mean every schmo with a wordpress blog can place a "tweet this" button on their article so why can't you?  Have you seen [the slides from Jarrett Byrnes talk](http://www.imachordata.com/?p=1322) that he just gave at the annual meeting? I'm not down on you ESA just so I can hate for the sake of hatin'.  It's that I feel a sense of ownership.  Like I said you're _my society_, as in I give you money, and I want you to reflect my values of modern, socially connected, collaborative, open science.  Right now you're closed, with almost zero social presence.  You want Ecosphere to be new and relevant right?  That's why you make it open access and rapid publication.  But in the end it just looks like all your other journals. Now back to reading my RSS feeds that don't include any ESA journals.
