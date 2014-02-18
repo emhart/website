@@ -4002,7 +4002,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-list > li > a {
-  padding: 3px 15px;
+  padding: 15px 15px;
 }
 
 .nav-list > .active > a,
@@ -4415,13 +4415,14 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .brand {
+ font-family:'Courier' , sans-serif;
   display: block;
   float: left;
   padding: 9.5px 20px 9.5px;
   margin-left: -20px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 200;
-  color: #666666;
+  color: #000000;
   text-shadow: 0 1px 0 #eeeeee;
 }
 
