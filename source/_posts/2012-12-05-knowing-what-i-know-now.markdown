@@ -8,10 +8,10 @@ categories: advice gradschool
 ---
 
 *This post is inspired by [Jeremy Yoder's](http://www.denimandtweed.com/) post on the [Molecular Ecology](http://www.molecularecologist.com/) blog on ["Knowing what I know now"](http://www.molecularecologist.com/2012/11/knowing-what-i-know-now-grad-school-jeremy-yoder/) advice for graduate students.  He opened it up as a carnival so I wrote this little gem with my own advice for graduate students.  Fair warning, I will not be winning any awards for "positive person of the year award" so take this all with a grain of salt. And potential employers, please stop reading here*
-
+<!-- more -->
 **Get out while you still can:**  Seriously, that's what any sane rational person would do.  You're giving up probably 8+ years of earnings potential (Phd and post-doc).  Let's consider a simple case.  You decide instead of academia you'll take that brilliant mind of yours and study something more profitable, like engineering or business.  Now at 23 you get a good job and over those 8 years, you manage to sock away $10,000 a year, and invest in a fund that has the minimal annual return rate of 5%.  At the end of those 8 years, say around 31-32, you will have around $100k+. What does the scenario look like after grad school and some post-docing?  My guess would be debt, a used car and a shitty apartment (I don't have a shitty apartment for the record).  Because when you're 25 putting a trip to Hawai'i on a credit card and sleeping on the beach sounds like great fun, but at 32 you're sort of a loser doing that.  So why on earth would you go to graduate school, giving up your prime earning years, to spend 8 years training for a job that pays the same salary as an entry level engineering job?  Does this sound like the choice of a rational person?
 
-<!-- more -->
+
 
 **You are a zealot, or you better be:** Want to know the answer to my last question?  It's no.  You are a disciple, an acolyte, you're really no different than a Mormon but without the benefit of an excuse to wear long johns all the time.  So you better fucking believe in what you do and love it.  If you're an unhappy grad student, you're an idiot, at least you should be rich and unhappy, but poor and unhappy is the worst.  So I hope whatever you do, it burns in you so hot that you can only wear natural fibers because your polyester shirts have that awful burning plastic smell to them.  
 

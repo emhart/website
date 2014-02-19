@@ -7,7 +7,7 @@ categories: R statistics analysis
 ---
 
 I'm happy to announce that I've finally finished my [rGtrends package](https://github.com/emhart/rGtrends), an interface 
-for the [unofficial python Google trends API](https://github.com/suryasev/unofficial-google-trends-api).
+for the [unofficial python Google trends API](https://github.com/suryasev/unofficial-google-trends-api). <!-- more -->
 It's a simple function that will allow you to search [Google Trends](http://www.google.com/trends) from within R.
 I haven't really come up with how this is really relevant to ecology, but it is pretty interesting from a social perspective.
 For instance you can see trends such as the rise of [Honey Boo Boo](http://en.wikipedia.org/wiki/Here_Comes_Honey_Boo_Boo)
@@ -17,7 +17,6 @@ and the fall of the [Jersey Shore](http://en.wikipedia.org/wiki/Jersey_Shore_(TV
 
 Which matches the same data from Google.
 
-<!--more-->
 ![real trends](http://i.imgur.com/rYRZr.png)
 
 There's a couple of caveats that go along the package.  The first is that data is scaled by Google so you can't analyze data from different searches.  The second is that Google just changed their interface so the python code that used to let me parse the results by language and country are broken but I hope to bring them back, and will if there's enough interest.  For now you can [install the package from github](https://github.com/emhart/rGtrends), and check out a [little vignette about how to use it here.](http://emhart.github.com/rGtrends/)

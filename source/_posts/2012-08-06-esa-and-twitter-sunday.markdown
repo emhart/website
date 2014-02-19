@@ -6,7 +6,7 @@ comments: true
 categories: [twitter, text mining]
 ---
 
-In 2007 at ESA I and two other people were using twitter.  Back then I didn't understand it and had to ask what hashtags were.  I gave up on twitter until 2010 and now with a new handle I think I finally get it.  One of my favorite things to do with twitter is text mine it.  So here's a word cloud of the 745 tweets with the #ESA2012 tag from Sunday. Clearly Jane Lubchenco and the plenary sessions were on lots of people's minds.
+In 2007 at ESA I and two other people were using twitter.  Back then I didn't understand it and had to ask what hashtags were.  I gave up on twitter until 2010 and now with a new handle I think I finally get it.  One of my favorite things to do with twitter is text mine it.  So here's a word cloud of the 745 tweets with the #ESA2012 tag from Sunday. Clearly Jane Lubchenco and the plenary sessions were on lots of people's minds. <!-- more -->	
 
 <ul class="thumbnails">
   <li class="span3">

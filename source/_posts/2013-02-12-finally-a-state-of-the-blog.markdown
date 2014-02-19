@@ -7,12 +7,11 @@ categories:
 ---
 
 I'd like to say that I've been waiting to give a state of the blog to coincide with the president's state of the union instead of just being "busy", but that's not the case.  In fact I wish I were so "busy", but the truth is that it's less that I've been busy and more that I don't have much to say. If a blog is going to be successful, it relies on people having to a lot of things to say, so it begs the question: "why don't I have much to say?"  So in many ways this post on the state of the blog is more like a "state of me."
-
+<!-- more -->
 
 There's a saying that goes "it's not where you are, it's where you're at" (A friend told me it was from Mobb Deep, but the original lyrics there is "it ain't where you from it's where you at").  The main point being that no matter where you "are" (geographically, professionally, etc...) what matters most is where you're "at" (mentally, emotionally, spiritually, etc...), because you can never escape yourself.  So I want to take stock of where I (and my blog) both "are" and are "at".
 
 
-<!-- more -->
 
 **Where I am**
 

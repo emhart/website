@@ -20,7 +20,7 @@ categories:
 </ul></div>
 
 <div class="span6">
-Another year, another ESA. A week after it ended and I feel like I've just recovered.  This marks my 5th ESA, and each one has been different.  In years past I'd say that I've mostly been inspired upon leaving them.  This year though I walked away and didn't feel like I saw any great talks.  This isn't to say that I thought all the talks were bad, only I didn't see anything that left me inspired like in the past.  I still had a great conference though, just for reasons different from previous years.
+Another year, another ESA. A week after it ended and I feel like I've just recovered.  This marks my 5th ESA, and each one has been different.  In years past I'd say that I've mostly been inspired upon leaving them.  This year though I walked away and didn't feel like I saw any great talks.  This isn't to say that I thought all the talks were bad, only I didn't see anything that left me inspired like in the past.  I still had a great conference though, just for reasons different from previous years. <!-- more -->
 <br><br>
 <b> What wasn't the best...</b>
 <br><br>
