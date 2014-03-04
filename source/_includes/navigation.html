@@ -2,29 +2,52 @@
   <div class="navbar-inner">
     <a class="brand" href="{{ root_url }}/">{{ site.title }}</a>
     <ul class="nav">
-    <li>
-          <object   height="35" width="35" data="{{ root_url }}/images/social_glyphs/twitter.svg" type="image/svg+xml"></object>
+      <li><a href="{{ root_url }}/blog/archives">Archive</a></li>
+      {% for navigation_element in site.navigation_elements %}
+      <li>
+        <a href="{{ navigation_element.link }}">
+          {{ navigation_element.name }}
+        </a>
       </li>
+      {% endfor %}
+    </ul>
 
-          <li>
-          <object   height="35" width="35" data="{{ root_url }}/images/social_glyphs/GitHub circle.svg" type="image/svg+xml"></object>
-      </li>
+   <ul>
+      <ul class="nav" id = "nav-right">
+      <li>
+        <object height="35" width="35" data="{{ root_url }}/images/social_glyphs/twitter.svg" type="image/svg+xml"></object>
 
-
-                <li>
-          <object   height="35" width="35" data="{{ root_url }}/images/social_glyphs/RSS.svg" type="image/svg+xml"></object>
       </li>
 
     </ul>
 
+    <ul>
+       <ul class="nav" id = "nav-right">
+       <li>
+           <object   height="35" width="35" data="{{ root_url }}/images/social_glyphs/GitHub circle.svg" type="image/svg+xml"></object>
+
+       </li>
+
+     </ul>
+
+     <ul>
+        <ul class="nav" id = "nav-right">
+        <li>
+          <object height="35" width="35" data="{{ root_url }}/images/social_glyphs/RSS.svg" type="image/svg+xml"></object>
+
+        </li>
+
+      </ul>
+
       {% if site.simple_search %}
-    <form class="navbar-form" action="{{ site.simple_search }}" method="get">
+    <form class="navbar-form" id = "nav-right" action="{{ site.simple_search }}" method="get">
       <fieldset role="search">
         <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
         <input class="span2" type="text" name="q" results="0" placeholder="Search"/>
       </fieldset>
     </form>
       {% endif %}
+
     {% include custom/navigation.html %}
   </div>
 </div>
