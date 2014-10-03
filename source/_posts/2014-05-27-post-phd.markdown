@@ -1,0 +1,45 @@
+---
+layout: post
+title: "Post PhD life"
+date: 2014-05-27
+comments: true
+categories: [personal, academia]
+---
+
+*Note: This is meant to be part of the Post-PhD carnival over at the [Contemplative Mammoth](http://contemplativemammoth.wordpress.com/2014/05/07/whats-your-post-phd-story-announcing-a-blog-carnival/), and is a brief story of my life after graduating.  A bit of context: I completed my PhD with Nick Gotelli at the University of Vermont in 2011, and did a post-doc at the University of British Columbia with Leticia Aviles until 2013.*
+
+It is a bitter luxury to be able to pinpoint the precise moment of descent in one's academic career.  In my academic life it wasn't as if I woke up one morning and thought "What happened to my career?" and realized that a series of small missteps had lead me down on the wrong path.  I learned just where the zenith was on Tuesday April 3rd, 2012 at 5:12 pm. The e-mail I received from Science read:
+<!--more-->
+>Dear Dr. Hart:
+>
+>Manuscript number: 1220805
+>
+>Thank you for submitting your manuscript “Climate change triggers morphological and life history evolution in response to predators” to Science. We have now received the detailed reviews of your paper. Unfortunately they are not positive enough to support publication of the paper in Science.
+
+After months of working part of my dissertation into a tight package for Science, I submitted and to my amazement it went for review. Those 4 weeks you have a paper out for review in Science are pretty awesome, and when the rejection comes, well it just blows.  Up until that e-mail, I had felt pretty confident in the course I had laid.  I did my PhD, I had gotten a post-doc, and when I finished that I would get a tenure track job somewhere that my wife and I both loved and that would be that.  At the time of my Science submission my post-doc was going so-so and I thought when my paper went out for review it would help make my career.  Instead with the rejection my metaphorical sextant was washed overboard, and the course I had imagined for the past 7 years no longer seemed feasible.
+
+Now I know that we don't really live in a world where you need a Science or Nature paper to get a job, but I didn't have the productivity in good middle tier journals to fall back on.  I was watching people with far more robust CV's than my own struggle to get jobs, and I realized that I would need at least one more post-doc to be competitive on the job market if not more. I was 33, my wife and I wanted to start a family, the idea of making post-doc salary for an indefinite number of years with not much light at the end of the tunnel did not have much appeal.  I already felt financially handicapped by spending my 20's being a travel bum and then doing a PhD, the idea of not making a real salary until I was almost 40 was daunting.
+
+At the same time I was getting more and more into programming, learning other languages, honing my R skills, and had joined the [rOpenSci](http://www.ropensci.org) team as a core developer. I found myself staying up late programming, not writing papers despite knowing the latter was the only real currency that mattered.  I also kept facing rejection as I submitted more papers.  I decided there are those who are blessed with the writing skills to get papers accepted on the first go round, but I wasn't one of them. I was slowly beginning to accept that I was more interested in (and well suited for) the intersection of technology, computation and science than I was in actually being an academic scientist.  Maybe I could have kept working towards that tenured position I had once dreamed about, but I realized I just wasn't willing to give up all the things I would need to give up to achieve it.
+
+When a position came up at the [National Ecological Observatory Network](http://www.neoninc.org) in informatics and algorithm implementation, I jumped on it and ended my post-doc 9 months early. I get to program, work with data, do some science, but without the need to teach or write grants or need to publish (but I still try). While I'm happy in my new position, I still feel somewhat unmoored, and the sentiment expressed in this [Slate piece](http://www.slate.com/articles/life/culturebox/2013/04/there_are_no_academic_jobs_and_getting_a_ph_d_will_make_you_into_a_horrible.html) from last year still reverberates with me:
+
+> By the time you finish...your academic self will be the culmination of your entire self, and thus you will believe, incomprehensibly, that not having a tenure-track job makes you worthless. You will believe this so strongly that when you do not land a job, it will destroy you, and nobody outside of academia will understand why.
+
+My training during my PhD and post-doc inculcated me with this sentiment, and I still find it hard to shake.  However, I don't want to get too bogged down in the pitfalls of academic training.
+
+Two years after my rejection and decision to leave my tenure track aspirations behind, I think I'm much happier for it. Looking back on it now, it was just the descent of that small piece of my career aspirations which helped me come to do what I really love doing, and it was nowhere near as bad as it seemed at the time. So while I'm not sure I'm really qualified to dispense advice to anyone, here's some things to think about if you're still in grad school.
+
+* Be prepared to not succeed in academia, sorry, it's just the way the numbers shake out in today's job market.
+
+* Know that your best asset is yourself.  You're a smart, motivated, autodidactic, thinking person.  Realize that you are not just your hard skill set, but there's a lot of soft skills under the hood that no one teaches you how to sell but helped you get that degree.
+
+* If you want a tenure track position, you need to really want it. Know that you may need to have multiple moves, multiple post-docs, and that you may have to give up a lot (I know I didn't want it enough).
+
+* There are very few straight lines from graduate school to tenure track position. I thought it would be a simple straight line when I started, and I had no idea how complicated it would be.
+
+* There are no wrong courses to set when you graduate (keeping with my nautical metaphors).  In the end what better metric of success is there except happiness? I know that sounds cliche and I have an inner Gordon Gekko too, but I'm not sure how far greed will take you.
+
+Despite the multiplicity of doom and gloom articles about getting your PhD ([here](http://www.theatlantic.com/business/archive/2013/02/the-phd-bust-pt-ii-how-bad-is-the-job-market-for-young-american-born-scientists/273377/) and [here](http://www.economist.com/node/17723223)), the statistics for unemployment (at a gross level) [don't look so bad](http://www.nsf.gov/statistics/infbrief/nsf11308/) (~ 2%). I think the biggest hurdle we all face at the end is our own hamstringing due to the indoctrination that we can only be faculty.  Once we let go of that and instead are empowered by all the traits that let us get a degree in the first place post-PhD life becomes much easier.
+
+*Postscript:  That paper went out for review in 6 more journals.  I've posted a [pre-print](http://biorxiv.org/content/early/2013/12/05/001263) and it's still out for review*

@@ -1,0 +1,24 @@
+---
+layout: post
+title: "...the one where I rant about climate change"
+date: 2014-06-09
+comments: true
+categories: [personal, science, climate change]
+---
+
+I'll start with a personal admission, my cholesterol and blood pressure are too high.  Now, nobody is rushing to shovel statins into my mouth, but when I went to my doctor and told him I was having a baby, he looked at me and said: "If you want to live long enough to see your son get married and have his own children, you need to make some changes to your lifestyle."  There were no real discussions or talks about feeling, that was sort of it.  I had the knowledge, decades of scientific research about heart disease and life style, a plaintive, if morose, warning from my doctor, and a choice to make.  So what on earth does this have to do with climate change?
+
+<!--more-->
+In my new parent, mildly sleep deprived state (my wife has it much worse) I was walking the dog listening to the latest [Slate political gabfest](http://www.slate.com/articles/podcasts/gabfest/2014/06/the_gabfest_on_bowe_bergdahl_and_executive_power_obama_s_last_attempt_to.html) talk about the [Obama administrations new climate action plan](http://www.nytimes.com/2014/06/03/us/politics/obama-epa-rule-coal-carbon-pollution-power-plants.html).  What really struck we was a comment by John Dickerson (at 33:06): "If you ask them (voters) where jobs are being made they talk about fracking...oil and gas...there's the imagination being fired by the prosect of hot new jobs where you can make $60-70k without a college diploma."
+
+![image credit http://www.vox.com/2014/6/5/5779040/7-reasons-America-fail-global-warming](http://cdn2.vox-cdn.com/assets/4567101/two_degrees.jpg)<h5><center>
+The path we're on leading to 5 degrees C warming, credit [Vox](http://www.vox.com/2014/6/5/5779040/7-reasons-America-fail-global-warming)</center></h5>
+
+I was struck by how amazingly shortsighted this thinking is (fracking jobs, not the observation).  Of course it's nothing new, but it resonated with me and it seemed remarkable how similar climate change is to my high cholesterol but scaled up from individual to, well, the planet.  In both cases there's decades of evidence that measurable quantity (cholestorol, CO2, CH4) is related to bad outcomes (heart attack, stroke, elevated temperatures, rising sea levels).  Secondly, this quantity is raised or lowered by behaviours (eating more oatmeal, driving less).  Finally, the effects of long term bad behaviour are not usually felt until it's too late.  I feel fine, nothing seems wrong with me, and similarly climate change doesn't seem that bad right now.  But if I wait 20 years and go in for an ECG the picture might be very different.  Similarly in 100 years when [sea levels are rapidly rising](http://www.nytimes.com/interactive/2014/03/27/world/climate-rising-seas.html), not much can be done.
+
+There's a dark humor in all of this to me.  I love my son, and I've pushed my cholestorol down through unpleastant morning runs followed by bowls of oatmeal and spoonfuls of cod liver oil, despite the fact that I'd rather sleep in and eat donuts.  If a heavy smoker who ate donuts every day and never exercised died of a stroke at 50, would anybody say "boy, no one ever saw that coming."?  So how is climate change any different?  Belief is irrelevant in the face of scientific evidence and the underlying natural proccesses.  Cholesterol isn't something I can feel, but it will slowly kill me* whether or not I believe in it.  Yet, why do we take such a vastly different attitude about cilmate change?  We wouldn't have much sympathy for our donut eating hero,  and yet as a nation we are side tracked by the metaphorical "donuts" of fracking jobs.
+
+As a scientist who's studied climate change, [abeit periphereally](http://www.uvm.edu/~ngotelli/manuscriptpdfs/Hart_Gotelli_2011_Oikos.pdf), I'm not much of an activist, and neither is my doctor.  He said to me simply, "You feel fine now, but if you don't change it will be too late by the time you notice anything wrong.  Either change now or don't and die young, it's your choice."  And that's really how I feel about climate change.  Politics, talking heads, none of this changes the underlying [dire facts of climate change](http://mashable.com/2014/05/12/west-antarctic-ice-sheet-collapse/).  Therein lies the dark humor for me.  I can't talk my way out of high cholesterol, and we can't talk our way climate change and yet somehow if you look at any mainstream discourse about climate change you'd think that if you just go on Fox News and scream loud enough the world will cool down.  It's simply two stark options, hard unpleasent work, or disaster, belief is irrelevant.
+
+
+__*Yes I know that cholesterol is more complicated than I'm making it out to be, particle size, c-reactive protien tests etc, but this is about analogy__

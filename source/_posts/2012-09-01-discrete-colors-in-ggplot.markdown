@@ -22,5 +22,12 @@ You can get more smoothing (depending on how many different categories you have)
 ![large bias parameter](http://emhart.info/images/largebias.png)
 
 Now if you have multiple factors that you want to have continuous like labeling for, all you need to do is create this little function with the colors you want spaced between and then use it in base graphics or `ggplot2`.  For instance in `ggplot2` you can just use the line `scale_colour_manual(values=gs.pal(5))` to generate discrete color values that appear continuous. This code will generate a nice figure with 5 levels moving from red to blue
-{% gist 3836105 %}
+```r
+gs.pal <- colorRampPalette(c("red","blue"),bias=.1,space="rgb")
+x <- rnorm(100)
+dat <- data.frame(cbind(x))
+dat$fac <- as.factor(sort(rep(1:5,20)))
+dat$y <- x * as.numeric(dat$fac)
+ggplot(dat,aes(x=x,y=y,colour=fac))+geom_point()+scale_colour_manual(values=gs.pal(5))
+```
 ![ggplot example](http://emhart.info/images/ggplotcont.png)
