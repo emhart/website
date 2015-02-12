@@ -4,3 +4,4 @@
 .gist-cache
 .pygments-cache
 _site
+sync_site.sh
