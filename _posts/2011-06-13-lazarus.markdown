@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Lazarus"
+date: 2011-06-13
+comments: false
+tags:
+ - Bayesian ANOVA
+ - mixed-models
+ - species richness.
+ - biodiversity
+---
+
+<div class='post'>
+Like so many blogs, this one started out with a bang and then ended with a whimper, and then sputtered along, with various attempts at resurrection.  I have littered the information highway with many blog corpses, but this is one I would like to keep alive.  You might say..."But Ted, you're presenting an obscure message (Ecology) in a medium past its prime (the blog, twitter's ugly and older sibling), who cares."  One reason is that I believe that twitter is useful for somethings, it is not really useful to explicate science.  At best it will point you towards longer form science articles, in science I think the blog is still king.  Regarding the obscure topic, well that is my plight / joy in life so not much can be done to change that now.  But now that I've said my spell to revive the blog, on with the show!<br /><br />I wanted to stick with my theme of writing about papers, so I will keep going with that theme, but I'd also like to be a bit more expansive in my thinking about ecology.  To that end I hope this post meets both goals.  The paper I'm reviewing today is<a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0017434">BUGS in the Analysis of Biodiversity Experiments: Species Richness and Composition Are of Similar Importance for Grassland Productivity</a>.  I came across this as I was writing another paper about the use of Bayesian ANOVA's.  I'll give a brief overview.  Essentially the authors discuss that biodiversity function experiments that have some metric of function such as NPP, biomass, etc, and try and see the link between that metric and something like species richness, diversity, composition etc, tend to use 1 of 2 approaches.  Those are traditional mixed ANOVA's and GLM mixed models.  Species composition is usually a random effect whereas richness is a fixed effect.  Depending on how you treat these effects (mixed or random), you can get different answers.   Secondly, there is disagreement about the importance of species composition depending on if it is an ANOVA or GLM model.  <br /><br />To the rescue, the multilevel ANOVA championed by <a href="http://www.stat.columbia.edu/~gelman/blog/">Andrew Gelman</a>.  It seems taken for granted by the authors that this is the best approach (I agree though).  It turns out that this approach sidesteps the whole mixed / random effects debate / difficulty in interpretation by treating all effects as random.  It resolves the conflict of the previous two methods by agreeing with the GLM approach that species composition is important.  Now I think Bayesian ANOVA's are great. <a href="https://docs.google.com/viewer?a=v&pid=explorer&chrome=true&srcid=0B_M0mgmVJAKUNGYzMTA3MjAtMTU2Ni00MGExLTk2YTMtMTkyYzUyYTYwNGUx&hl=en_US"> I published a paper using them </a>last year.  I think this paper is great because its one more demonstration of the flexibility and usefulness of Bayesian ANOVA's, and worth a read.</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Dr. Fox</div>
+<div class='content'>
+Some (well, me) would argue that questions about the effects of species richness vs. composition aren&#39;t actually statistical questions at all, and are best answered in a framework that defines those effects in a way that is independent of choice of experimental design and statistical model (Fox 2006 Ecology).</div>
+</div>
+</div>

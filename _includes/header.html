@@ -1,0 +1,67 @@
+<head>
+    <title>{{ site.name }} - {{ site.description }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-gb" />
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl| split: '/' | join:'/' }}/css/main.css" />
+
+    <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+    <link rel="stylesheet" href="/assets/academicons.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="off-canvas">
+    <figure class="avatar">
+      <img src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="Picture" title="That's me, {{ site.author }}.">
+    </figure>
+    <div class="bio">
+        <h1>  {{ site.author }}</h1>
+        <p>{{ site.author-bio }}</p>
+    </div>
+    <nav>
+      <h6>where you can find me</h6>
+      <table style="width:100%"><tr>
+          <td><a target="_blank" href="mailto:{{ site.email }}"><i class="fa fa-send fa-lg"></i></a></td>
+
+        {% if site.twitter %}
+        <td><a target="_blank" href="http://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter fa-lg"></i></a></td>
+        {% endif %}
+        {% if site.github %}
+        <td><a target="_blank" href="http://github.com/{{ site.github }}">
+          <i class="fa fa-github-alt fa-lg"></i></a></td>
+        {% endif %}
+        {% if site.linkedin %}
+        <td><a target="_blank" href="http://www.linkedin.com/profile/view?id={{ site.linkedin }}">
+          <i class="fa fa-linkedin fa-lg"></i></a></td>
+        {% endif %}
+        {% if site.impactstory %}
+        <td><a target="_blank" href="http://impactstory.org/{{ site.impactstory }}">
+          <i class="ai ai-impactstory fa-lg"></i></a></td>
+        {% endif %}
+        {% if site.orcid %}
+        <td><a target="_blank" href="http://orcid.org/{{ site.orcid }}">
+          <i class="ai ai-orcid fa-lg"></i></a></td>
+        {% endif %}
+      </tr>
+      </table>
+    </nav>
+  </div>
+
+
+  <div class="site-wrapper">
+
+    <header>
+      <div class="h-wrap">
+        <h1 class="title"><a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage">{{ site.name }}</a></h1> - <p style = "color: dimgrey;
+  display: inline;font-size: 90%"> {{site.subname}}</p>
+        <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+      </div>
+    </header>
