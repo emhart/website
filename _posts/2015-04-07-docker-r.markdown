@@ -1,0 +1,125 @@
+---
+layout: post
+title: "Docker and R: making CRAN submission a little easier"
+date: 2015-04-07
+comments: true
+tags: [software development, R, docker]
+---
+
+Last week I submitted a package to CRAN that I'd been working on for a long time, [EcoSimR](http://ecosimr.org).  When I ran `R CMD CHECK --as-cran EcoSimR_0.1.0.tar.gz` and it passed all the checks, I thought it was golden.  But anyone who's ever submitted to CRAN knows that things are never as simple as they might seem.  Why had my package checked out fine on my machine but not at CRAN?  I did not read the submission policy carefully enough.
+
+> Please ensure that R CMD check --as-cran has been run on the tarball to be uploaded before submission. This should be done with the current version of R-devel
+
+My primary sin was not checking my package with the `R-devel`. Why you might ask? Truth is that managing multiple versions of R is not the easiest thing.
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/thosjleeper">@thosjleeper</a> perhaps; unless you are familiar with R &amp; its ENV variables etc, runnin R-pathed &amp; R-devel not trivial <a href="https://twitter.com/emhrt_">@emhrt_</a> <a href="https://twitter.com/bendmorris">@bendmorris</a></p>&mdash; Gavin Simpson (@ucfagls) <a href="https://twitter.com/ucfagls/status/584031907546927104">April 3, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+So what's the solution if you need to test your package submissions with `R-devel` but don't want to have to constantly pull down nightly builds of R?  [Dirk Eddelbuettel](https://twitter.com/eddelbuettel) had the elegant suggestion that I use the [Docker file for R-devel](https://registry.hub.docker.com/u/rocker/r-devel/) to test my packages. I happen to have a number of CRAN submissions to do so I thought I'd try it.  It worked out great so I thought I'd share my workflow for testing package submissions.
+
+First things first, I'm going to assume the following:
+
+* You are familiar with Docker and have it installed on your system
+* You are familiar with Dockerhub and downloading Docker files
+* You have successfully run Docker files on your system.
+
+If you haven't don't worry, but you should probably get up to speed on all the above and come back.  A good place to start is  [here](http://blog.scottlowe.org/2014/03/11/a-quick-introduction-to-docker/) to learn more about Docker.  There's a lot of buzz about Docker so I think it's definitely worth your while to learn about it.  On to the check workflow.
+
+The basic workflow for checking your package using Docker is as follows:
+
+1. Grab the latest stable release and development release of the [Rocker](https://registry.hub.docker.com/repos/rocker/) (R-Docker) files from Docker hub.
+2. Deploy a container for each.
+3. Copy your package source over to the container.
+4. Build your tarball.
+5. Check your file like you would normally.
+
+There are multiple ways to do this, but here's how I do it.  In this example I'll use the `R-Devel` file because that's generally the one you won't have locally (I'm assuming you have the latest stable release).
+
+**Pull Dockerfile**
+
+The first step is to update or download the Docker files from Docker hub.
+
+```bash
+bash-3.2$ docker pull rocker/r-devel
+```
+
+**Deploy container**
+
+Next deploy your container.
+
+```bash
+bash-3.2$ docker run -ti --rm  rocker/r-devel /bin/bash
+```
+
+The next steps involve interacting with the container.  If you're using a Mac you've already opened up a boot2docker terminal to deploy the container.  You'll want to open another one to interact with your running container.  All the command I'm running here happen on my boot2docker shell *THAT IS NOT* running the container unless otherwise noted.
+
+
+**Copy your source over**
+
+Ok, so the previous steps are pretty boiler plate, here's where it gets a bit trickier. The container has it's own file system, so you'll need to get your package files into the container. You can do this with the Docker `exec` command. To do this you'll need to grab the name of your container with `docker ps` and either grab the name or the container id (I prefer the name).
+
+
+```bash
+bash-3.2$ docker ps
+CONTAINER ID        IMAGE                   COMMAND             CREATED             STATUS              PORTS               NAMES
+18ae74bf3eff        rocker/r-devel:latest   "/bin/bash"         4 seconds ago       Up 4 seconds                            cranky_ardinghelli
+```
+
+In this case the name is "cranky_ardinghelli".  Using `docker exec` you can send commands to the container.  So we'll create a directory to hold our source.  You can do this with `exec` or just within the shell of the container.
+
+```bash
+bash-3.2$ docker exec -i cranky_ardinghelli bash -c 'mkdir /RSource'
+```
+
+Next copy the package source into the container, I'll do this with my package `biorxiv`
+
+```bash
+bash-3.2$ tar -cv biorxiv | docker exec -i cranky_ardinghelli tar x -C /RSource
+```
+
+Now the directory `biorxiv` can be found in my container in `/RSource`
+
+**Build your package**
+
+The hard part is over. Now everything we'll be doing is going to be within your container.  Basically you'd just build and test your package the way you normally would.  The only difference is that none of your dependencies will likely be installed.  If you build vignettes with `knitr` you'll need to install that, and any other dependencies. I'm sure there's a more elegant way to do this, but you can open up R at the terminal and run `install.packages('knitr')`.  However be sure you run all your R commands as RD for the development version.
+
+```bash
+root@18ae74bf3eff:/RSource# RD
+```
+
+Now that you've installed all your dependencies it's easy breezy cover squirrel, just be sure to use RD for the building.
+
+```bash
+root@18ae74bf3eff:/RSource# RD CMD build biorxiv/
+```
+
+**Check your package**
+
+I use a couple short cuts to check my package.  Namely I skip building PDFs because I don't want to have to install LaTeX in the container, but you could if you really wanted to.  I get around this by running my check with a couple extra flags.
+
+```bash
+root@18ae74bf3eff:/RSource# RD CMD check --no-build-vignettes --no-manual --as-cran biorxiv_0.1.0.tar.gz
+```
+
+Now you're done! If you make any changes just repeat steps 3-5.  Re-copy your source, rebuild and recheck until you pass all your checks.
+
+In my case, I get the new check warnings with `R-Devel` that you don't see with the stable version of R.
+
+>The Title field should be in title case, current version then in title case:
+
+>‘Search and Download Papers from the biorxiv.org Preprint Server’
+
+>‘Search and Download Papers from the Biorxiv.org Preprint Server’
+
+Great!  You're all done.  If you want you can easily save your Docker image with dependencies on your machine.  That way I can avoid installing dependencies in the future. Here's how I saved mine.  I get the container ID like before with `docker ps` then just run the following on your host machine (not in the container):
+
+```bash
+bash-3.2$ docker commit -m "added dependencies for biorxiv package checking" 18ae74bf3eff rocker/r-devel:biorxiv-deps
+```
+Now if you want to start that image up, just run:
+
+```bash
+bash-3.2$ docker run -ti --rm  rocker/r-devel:biorxiv-deps /bin/bash
+```
+
+Now I have my old image up and running!  The only issue is that the development builds are changing so you'll probably need to reinstall dependencies regularly anyway as the Docker file is updated.  This is my current workflow with Docker for checking packages, but if you've got a more elegant way, I'd love to hear about it.
