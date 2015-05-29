@@ -6,7 +6,7 @@ comments: true
 tags: [software development, R, docker]
 ---
 
-###*Updated: See bottom of post*
+###*Updated: See bottom of <a href="#update">post</a>*
 
 Last week I submitted a package to CRAN that I'd been working on for a long time, [EcoSimR](http://ecosimr.org).  When I ran `R CMD CHECK --as-cran EcoSimR_0.1.0.tar.gz` and it passed all the checks, I thought it was golden.  But anyone who's ever submitted to CRAN knows that things are never as simple as they might seem.  Why had my package checked out fine on my machine but not at CRAN?  I did not read the submission policy carefully enough.
 
@@ -127,9 +127,9 @@ bash-3.2$ docker run -ti --rm  rocker/r-devel:biorxiv-deps /bin/bash
 Now I have my old image up and running!  The only issue is that the development builds are changing so you'll probably need to reinstall dependencies regularly anyway as the Docker file is updated.  This is my current workflow with Docker for checking packages, but if you've got a more elegant way, I'd love to hear about it.
 
 
-*Update*
+<a id="update">*Update*</a>
 
-[Carl Boettiger](www.cboettig.info) suggestd that you could also just mount the directory you wanted to work on inside the container. This is a more elegant solution (would expect nothing less) than the one above but both work equally well.  Carl's has the advantage that if you make edits on the volume in the docker container they are saved on your local directory outside the docker container. In the above solution if you make changes to your local copy, you need to re-copy it over to the docker container. Instead of the steps listed above as "Copy your source" you can just run the following command:
+[Carl Boettiger](http://www.carlboettiger.info/) suggestd that you could also just mount the directory you wanted to work on inside the container. This is a more elegant solution (would expect nothing less) than the one above but both work equally well.  Carl's has the advantage that if you make edits on the volume in the docker container they are saved on your local directory outside the docker container. In the above solution if you make changes to your local copy, you need to re-copy it over to the docker container. Instead of the steps listed above as "Copy your source" you can just run the following command:
 
 ```R
 $ docker run --rm -ti -v ~/wkspace/biorxivr:/wkspace/biorxivr rocker/r-devel bash

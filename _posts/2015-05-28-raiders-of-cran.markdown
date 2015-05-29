@@ -13,7 +13,7 @@ Submitting packages to CRAN is a [notoriously finicky](http://ironholds.org/blog
 
 I've read the large section in the [CRAN WRE](http://cran.r-project.org/doc/manuals/r-release/R-exts.html#The-DESCRIPTION-file), and but often I still miss things (my most common sin is that I forget to update the date field) that don't throw warnings in `R CMD CHECK --as-cran`.  I don't agree with these enforced minutiae, or the fact that my CRAN checks are different from the maintainers.  However I accept the fact that if I want to use CRAN, I need to conform to their policies.  A flaw in their policies though is they are not enforced by a computer and therefore the same person can give you conflicting interpretations of the policy.  Here is my tale of woe with the package [`biorxivr`](http://cran.r-project.org/web/packages/biorxivr/index.html)
 
-I won't bore you with the whole story.  Suffice to say originally the package was called `biorxiv`, it let you search the [bioRxiv preprint](www.biorxiv.org) server from R.  The initial problem was that the package has the same name as the service is searched. Now the CRAN DESCRIPTION policy states:
+I won't bore you with the whole story.  Suffice to say originally the package was called `biorxiv`, it let you search the [bioRxiv preprint](http://www.biorxiv.org) server from R.  The initial problem was that the package has the same name as the service is searched. Now the CRAN DESCRIPTION policy states:
 
 > Refer to other packages and external software in single quotes, and to book titles (and similar) in double quotes.
 
