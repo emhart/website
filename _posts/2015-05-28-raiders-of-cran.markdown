@@ -17,7 +17,7 @@ I won't bore you with the whole story.  Suffice to say originally the package wa
 
 > Refer to other packages and external software in single quotes, and to book titles (and similar) in double quotes.
 
-So in my initial submission where I used '' in referring to the package and not when referring to the website. However after many back and forth's with CRAN maintainers I just acquiesced and changed the package name. The package was successfully submitted and all was well with the world.  Until I got a notice it wasn't building last night.  I quickly made a patch and submitted it. When I saw the e-mail from Brian Ripley this morning, I knew that bad news awaited.  Here is what he said:
+So in my initial submission I used ' ' in referring to the package and not when referring to the website to try and disambiguate the two. However after many back and forth's with CRAN maintainers on this, I just acquiesced and changed the package name. The package was successfully submitted and all was well with the world.  Until I got a notice it wasn't building last night.  I quickly made a patch and submitted it. When I saw the e-mail from Brian Ripley this morning, I knew that bad news awaited.  Here is what he said:
 
 >Please do check as per the policies.  You missed
 
@@ -38,4 +38,11 @@ Second, you'll see two "possibly mis-spelled words". As before nothing was said 
 
 I corrected it to "PDF's" and my submission went on CRAN successfully. So early on he said "here's how you spell PDFs", but in my latest submission he calls it out as a mis-spelled word. So which is it?  Why was it ok in the first submission but not the second?  Finally why does `R CMD CHECK --as-cran` not tell me these as warnings but it does for Ripley?
 
-I doubt there's any malice in these discrepancies, but to me it highlights one of the shortcomings of using such human based submission system. In fact at this point I've probably spend almost as much time reworking the DESCRIPTION file as I have writing the package (to be fair it's a small package). So I can't help but wonder is this the best way to create a vibrant open source community?  Where a few gate keepers inconsistently enforce policy on a package that is completely unrelated to the software's functionality?  I'm all for consistent package metadata, but that only works when the submission system is consistent and here is a case where it wasn't.
+I doubt there's any malice in these discrepancies, but to me it highlights one of the shortcomings of using such human based submission system. In fact at this point I've probably spent almost as much time reworking the DESCRIPTION file as I have writing the package (to be fair it's a small package). So I can't help but wonder is this the best way to create a vibrant open source community?  Where a few gate keepers inconsistently enforce policy on a package component that is completely unrelated to the software's functionality?  I'm all for good package metadata, but that only works when the submission system is consistent.
+
+
+**Update**
+
+I posted this last night with a CC to [Gavin Simpson](http://www.fromthebottomoftheheap.net/) because I respect his opinion, he's a badass R programmer, is experienced in CRAN submission and he always has thoughtful rebuttals to the normal anti-CRAN echo chamber I can sometimes get caught up in on twitter. I wanted to present an alternative view point to my own.  To paraphrase his response: The quote rule is likely intended for specific things, which a website is, not just software. CRAN policies are always evolving so don't get hung up on a legalistic reading of the policy, if they point something out, just change it (see the [full twitter exchange](https://twitter.com/emhrt_/status/604141386913341440)).
+
+And that's kind of where we're at as an R community. I may not like the system, but it's the system we have and I'd rather jump through hoops to submit to CRAN than throw my hands up and just leave my software on GitHub. To me the ease of access CRAN provides is more important than any ideological feelings I have. Maybe that will change some day though.
