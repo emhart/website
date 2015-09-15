@@ -16,7 +16,7 @@ I love twitter.  I think it's a great tool to build community, and in my case it
 I now have a couple conferences worth of twitter data so for fun I wanted to create my own API to share that data.  This post is just to quickly share the documentation for the API, in another post I can share the nuts and bolts but if you want you can check out the [repo for the API here.](https://github.com/emhart/tweetDBapi). Currently you can access data by conference and year.  Within each combination you can download tweets by screen name or date, or a combination of the two.  The current conferences I have data for are ESA and JSM (the ASA joint statistical meeting).  I have ESA data for 2014 and 2015, and JSM for 2015.
 
 ### List all available screen names
-__Resource URL:__ http://emhart.info/screen_name/:conferce/:year
+__Resource URL:__ http://emhart.info/screen_name/:conference/:year
 
 Resource Parameters
 
@@ -34,7 +34,7 @@ _Example result:_
 ```
 
 ### List all available dates
-__Resource URL:__ http://emhart.info/date/:conferce/:year
+__Resource URL:__ http://emhart.info/date/:conference/:year
 
 Resource Parameters
 
@@ -52,7 +52,7 @@ _Example result:_
 ```
 
 ### Get twitter data
-__Resource URL:__ http://emhart.info/tweets/:conferce/:year?sn=<screen_name>&date=<date>&limit=<limit>
+__Resource URL:__ http://emhart.info/tweets/:conference/:year?sn=<screen_name>&date=<date>&limit=<limit>
 
 Resource Parameters
 
